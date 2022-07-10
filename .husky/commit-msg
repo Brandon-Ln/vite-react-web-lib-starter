@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# 对仓库提交的 message 进行 lint 操作
+npx --no-install commitlint --edit $1
