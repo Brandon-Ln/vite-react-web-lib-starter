@@ -1,5 +1,5 @@
 import { unmountComponentAtNode, render } from 'react-dom';
-import { afterEach, beforeEach, it } from 'vitest';
+import { afterEach, beforeEach, it, describe } from 'vitest';
 import { act } from 'react-dom/test-utils';
 
 import { DemoComponents } from '../src';
@@ -19,14 +19,16 @@ afterEach(() => {
   container && container.remove();
 });
 
-it('render children content', () => {
-  act(() => {
-    render(<DemoComponents logMessage="log" />, container);
-  });
-  expect(container.textContent).toBeFalsy();
+describe('components', () => {
+  it('render children content', () => {
+    act(() => {
+      render(<DemoComponents logMessage="log" />, container);
+    });
+    expect(container.textContent).toBeFalsy();
 
-  act(() => {
-    render(<DemoComponents logMessage="log">Demo</DemoComponents>, container);
+    act(() => {
+      render(<DemoComponents logMessage="log">Demo</DemoComponents>, container);
+    });
+    expect(container.textContent).toBe('Demo');
   });
-  expect(container.textContent).toBe('Demo');
 });
