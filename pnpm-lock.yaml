@@ -24,7 +24,7 @@ specifiers:
   react-dom: ^18.0.0
   react-test-renderer: ^18.2.0
   typescript: ^4.6.3
-  vite: ^2.9.9
+  vite: ^3.0.0
   vite-plugin-eslint: ^1.6.1
   vitest: ^0.18.0
 
@@ -54,8 +54,8 @@ devDependencies:
   react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
   react-test-renderer: registry.npmmirror.com/react-test-renderer/18.2.0_react@18.2.0
   typescript: registry.npmmirror.com/typescript/4.7.4
-  vite: registry.npmmirror.com/vite/2.9.14
-  vite-plugin-eslint: registry.npmmirror.com/vite-plugin-eslint/1.6.1_eslint@8.19.0+vite@2.9.14
+  vite: registry.npmmirror.com/vite/3.0.0
+  vite-plugin-eslint: registry.npmmirror.com/vite-plugin-eslint/1.6.1_eslint@8.19.0+vite@3.0.0
   vitest: registry.npmmirror.com/vitest/0.18.0_c8@7.11.3+jsdom@20.0.0
 
 packages:
@@ -5031,7 +5031,7 @@ packages:
       spdx-expression-parse: registry.npmmirror.com/spdx-expression-parse/3.0.1
     dev: true
 
-  registry.npmmirror.com/vite-plugin-eslint/1.6.1_eslint@8.19.0+vite@2.9.14:
+  registry.npmmirror.com/vite-plugin-eslint/1.6.1_eslint@8.19.0+vite@3.0.0:
     resolution: {integrity: sha512-wXwGJ222zjlllHmmPXX6oSU8DbmYjnA6HHBYbOLT8WAc73j4/YAtBQHCVSoHOTPiT4TPzsuZSvputWwc86BweQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite-plugin-eslint/-/vite-plugin-eslint-1.6.1.tgz}
     id: registry.npmmirror.com/vite-plugin-eslint/1.6.1
     name: vite-plugin-eslint
@@ -5044,25 +5044,28 @@ packages:
       '@types/eslint': registry.npmmirror.com/@types/eslint/8.4.5
       eslint: registry.npmmirror.com/eslint/8.19.0
       rollup: registry.npmmirror.com/rollup/2.76.0
-      vite: registry.npmmirror.com/vite/2.9.14
+      vite: registry.npmmirror.com/vite/3.0.0
     dev: true
 
-  registry.npmmirror.com/vite/2.9.14:
-    resolution: {integrity: sha512-P/UCjSpSMcE54r4mPak55hWAZPlyfS369svib/gpmz8/01L822lMPOJ/RYW6tLCe1RPvMvOsJ17erf55bKp4Hw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite/-/vite-2.9.14.tgz}
+  registry.npmmirror.com/vite/3.0.0:
+    resolution: {integrity: sha512-M7phQhY3+fRZa0H+1WzI6N+/onruwPTBTMvaj7TzgZ0v2TE+N2sdLKxJOfOv9CckDWt5C4HmyQP81xB4dwRKzA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite/-/vite-3.0.0.tgz}
     name: vite
-    version: 2.9.14
-    engines: {node: '>=12.2.0'}
+    version: 3.0.0
+    engines: {node: '>=14.18.0'}
     hasBin: true
     peerDependencies:
       less: '*'
       sass: '*'
       stylus: '*'
+      terser: ^5.4.0
     peerDependenciesMeta:
       less:
         optional: true
       sass:
         optional: true
       stylus:
+        optional: true
+      terser:
         optional: true
     dependencies:
       esbuild: registry.npmmirror.com/esbuild/0.14.48
@@ -5108,12 +5111,13 @@ packages:
       local-pkg: registry.npmmirror.com/local-pkg/0.4.1
       tinypool: registry.npmmirror.com/tinypool/0.2.2
       tinyspy: registry.npmmirror.com/tinyspy/0.3.3
-      vite: registry.npmmirror.com/vite/2.9.14
+      vite: registry.npmmirror.com/vite/3.0.0
     transitivePeerDependencies:
       - less
       - sass
       - stylus
       - supports-color
+      - terser
     dev: true
 
   registry.npmmirror.com/w3c-hr-time/1.0.2:
