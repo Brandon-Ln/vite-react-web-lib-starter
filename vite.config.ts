@@ -1,4 +1,5 @@
 /// <reference types="vitest" />
+
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import react from '@vitejs/plugin-react';
@@ -14,7 +15,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'react-ink-ripple',
+      name: 'react-lib-web-starter',
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
@@ -27,8 +28,5 @@ export default defineConfig({
         },
       },
     },
-  },
-  test: {
-    environment: 'jsdom',
   },
 });
