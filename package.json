@@ -42,7 +42,7 @@
     "commit": "cz",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
-    "start": "husky install && pnpm i || npm i ",
+    "initialize": "pnpm i && git init && husky install",
     "typecheck": "tsc --noEmit",
     "build": "vite build && tsc",
     "release": "vite build && tsc && release-it",
