@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
+import { useEffect } from 'react'
 
 export function useDemo() {
   useEffect(() => {
-    console.log('USE DEMO HOOK EXECUTE.');
-  }, []);
+    console.log('USE DEMO HOOK EXECUTE.')
+  }, [])
 }

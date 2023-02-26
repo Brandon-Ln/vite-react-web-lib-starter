@@ -1,9 +1,18 @@
-import type { DemoProps } from './interface';
+import { useEffect } from 'react'
+import type { DemoProps } from './interface'
 
-export function DemoComponents(props: DemoProps) {
-  const { children = '', logMessage } = props;
+export function DemoComponent(props: DemoProps) {
+  const { children = '', logMessage } = props
 
-  console.count(logMessage);
+  console.count(logMessage)
 
-  return <div>{children}</div>;
+  useEffect(() => {
+    console.log(`${DemoComponent.name} rendered`)
+  }, [])
+
+  return <div>{children}</div>
+}
+
+export function WrapperComponent() {
+  return <DemoComponent logMessage="foo" />
 }

@@ -4,10 +4,10 @@
 
 ...
 
-## Feature
+## Usage
 
 ...
 
-## API
+## Feature
 
 ...
